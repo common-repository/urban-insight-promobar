@@ -1,0 +1,67 @@
+/*
+ * Announcement CSS
+ *
+ * @package urbipb
+ *
+ */
+.urbipb-announcement-container {
+	color: #fff;
+	background-color: #990000;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 10px;
+	z-index: 999;
+}
+body.admin-bar .urbipb-announcement-container {
+	top: 32px;
+}
+.urbipb-announcement {
+	position: relative;
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	display: block;
+	clear: both;
+}
+.urbipb-announcement a#urbipb-announce-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.urbipb-announcement a#urbipb-announce-btn:hover,
+.urbipb-announcement a#urbipb-announce-btn:active,
+.urbipb-announcement a#urbipb-announce-btn:focus {
+	color: rgba(255,255,255,1);
+}
+.urbipb-announcement span.mega-icon.dashicons {
+	font-size: 64px;
+	line-height: 1.2;
+	height: 64px;
+	width: 64px;
+	display: block;
+	float: left;
+	clear: none;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.urbipb-announcement span.mega-icon.dashicons.dashicons-blank {
+	display: none;
+}
+
+.urbipb-announcement .urbipb-announcement-content {
+	margin-right: 30px;
+}
+
+@media screen and (max-width: 782px) {
+	body.admin-bar .urbipb-announcement-container {
+		top: 46px;
+	}
+}

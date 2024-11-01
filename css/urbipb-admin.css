@@ -1,0 +1,112 @@
+/*
+ * Admin CSS
+ *
+ * @package urbipb
+ *
+ */
+
+/* Header */
+#urbipb-container .plugin-header {
+	display: block;
+	clear: both;
+	width: 100%;
+	padding: 15px 0 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.0625);
+	margin-bottom: 25px;
+}
+
+#urbipb-container .plugin-header a > img {
+	display: inline-block;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+#urbipb-container .plugin-header h2 {
+	display: block;
+	clear: both;
+	margin: 0 0 15px;
+	vertical-align: middle;
+}
+
+/* Date & Time Fields */
+#urbipb-container table.form-table tr.urbipb-date > td {
+	padding-bottom: 0;
+}
+
+#urbipb-container table.form-table tr.urbipb-time > td {
+	padding-top: 0;
+	padding-bottom: 2em;
+}
+
+/* Dashicons */
+#urbipb-container table.form-table td .icon-preview {
+	background: #fff;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	height: 80px;
+	width: 80px;
+	padding: 15px 5px 15px;
+}
+
+#urbipb-container table.form-table td .icon-preview .dashicons {
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 36px;
+	width: 36px;
+	height: 36px;
+}
+
+#urbipb-container table.form-table td input.dashicons-picker {
+	margin-right: 5px;
+}
+
+#urbipb-container table.form-table td #urbipb_disclaimer_icon {
+	margin-right: 2px;
+	display: none;
+}
+
+#urbipb-container table.form-table td a.helper-link {
+	vertical-align: middle;
+	line-height: 45px;
+}
+
+/* Dashicons Picker Grid */
+.dashicon-picker-container {
+		margin-top: 15px;
+}
+
+.dashicon-picker-control input[type="text"] {
+	min-height: 24px;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 782px) {
+	#urbipb-container .plugin-header a {
+		display: block;
+		clear: both;
+		width: 100%;
+	}
+	#urbipb-container .plugin-header a img {
+		display: block;
+		clear: both;
+		float: none;
+		margin: 0 0 10px;
+	}
+	#urbipb-container table.form-table td input.dashicons-picker {
+		vertical-align: middle;
+	}
+	#urbipb-container table.form-table a#urbipb_cookie_reset {
+		float: right;
+		margin-top: 10px;
+	}
+	.dashicon-picker-container {
+		margin-top: 15px;
+	}
+}
